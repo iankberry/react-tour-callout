@@ -34,6 +34,8 @@ npm install --save react-tour-callout
 npm run example
 ```
 
+[![Edit react-tour-callout](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-tour-callout-uxilky?fontsize=14&hidenavigation=1&theme=dark)
+
 ## Docs
 
 ### Props
@@ -61,7 +63,42 @@ npm run example
 
 ## Example
 
-```jsx 
+This is just a simple contrived example showing anchoring the popover to a button.
+
+```jsx
+export const App = () => {
+    const [open, setOpen] = React.useState(false);
+
+    return (
+        <div>
+            <button
+                className="open-button"
+                onClick={() => setOpen(true)}
+            >
+                Open popover
+            </button>
+            <CalloutPopover
+                placement="bottom"
+                open={open}
+                height={180}
+                width={350}
+                showBackdrop={true}
+                backdropProps={{
+                    onClick: () => setOpen(false),
+                    onEsc: () => setOpen(false),
+                }}
+                popoverAnchor=".open-button"
+            >
+                <h1>Popover content here...</h1>
+                <button
+                    onClick={() => setOpen(false)}
+                >
+                    Close popover
+                </button>
+            </CalloutPopover>
+        </div>
+    )
+};
 ```
 
 ## Note
