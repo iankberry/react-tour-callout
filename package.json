@@ -1,0 +1,70 @@
+{
+  "name": "react-tour-callout",
+  "version": "1.0.0",
+  "repository": "iankberry/react-tour-callout",
+  "description": "A simple library to create UI callouts designed for building custom tour components",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "license": "MIT",
+  "author": {
+    "name": "Ian Berry",
+    "email": "iberry@raxnet.net",
+    "url": "https://iankberry.com"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "build": "tsc",
+    "release": "tsc && np",
+    "test": "echo \"ok\"",
+    "example": "webpack serve --progress --mode development --config example/webpack.config.js"
+  },
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "tour",
+    "callout",
+    "popover",
+    "joyride"
+  ],
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.20.55",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "babel-eslint": "^10.0.3",
+    "confusing-browser-globals": "^1.0.11",
+    "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "^7.0.2",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-loader": "^9.4.0",
+    "typescript": "^3.7.5",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@popperjs/core": "^2.11.6",
+    "@types/react-transition-group": "^4.4.5",
+    "clsx": "^1.2.1",
+    "react-transition-group": "^4.4.5",
+    "use-element-watcher": "^1.0.5"
+  }
+}
