@@ -1,6 +1,6 @@
 {
   "name": "react-tour-callout",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "iankberry/react-tour-callout",
   "description": "A simple library to create UI callouts designed for building custom tour components",
   "main": "dist/index.js",
